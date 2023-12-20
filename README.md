@@ -44,6 +44,23 @@ sudo dpkg -i systemd_249.11-0ubuntu3.9_amd64.deb
 sudo apt-mark hold libnss-mymachines libnss-systemd libpam-systemd libsystemd0 libudev-dev libudev1 systemd systemd-container systemd-sysv systemd-timesyncd udev
 ```
 
+### Filter them in console to check their versions.
+
+```console
+dpkg -l | awk '{if($3 ~ /ubuntu3.[79]/)print $0}'
+hi  libnss-mymachines:amd64                   249.11-0ubuntu3.9                        amd64        nss module to resolve hostnames for local container instances
+hi  libnss-systemd:amd64                      249.11-0ubuntu3.9                        amd64        nss module providing dynamic user and group name resolution
+hi  libpam-systemd:amd64                      249.11-0ubuntu3.9                        amd64        system and service manager - PAM module
+hi  libsystemd0:amd64                         249.11-0ubuntu3.9                        amd64        systemd utility library
+hi  libudev-dev:amd64                         249.11-0ubuntu3.9                        amd64        libudev development files
+hi  libudev1:amd64                            249.11-0ubuntu3.9                        amd64        libudev shared library
+hi  systemd                                   249.11-0ubuntu3.9                        amd64        system and service manager
+hi  systemd-container                         249.11-0ubuntu3.9                        amd64        systemd container/nspawn tools
+hi  systemd-sysv                              249.11-0ubuntu3.9                        amd64        system and service manager - SysV links
+hi  systemd-timesyncd                         249.11-0ubuntu3.9                        amd64        minimalistic service to synchronize local time with NTP servers
+hi  udev                                      249.11-0ubuntu3.9                        amd64        /dev/ and hotplug management daemon
+```
+
 ## Downgrade WSL itself.
 
 Last version known to work 2.0.4.0.
