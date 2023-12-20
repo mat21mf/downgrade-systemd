@@ -46,10 +46,12 @@ sudo apt-mark hold libnss-mymachines libnss-systemd libpam-systemd libsystemd0 l
 
 ## Downgrade WSL itself.
 
+Last version know to work 2.0.4.0.
+
 ### Download requirements.
 
 ```console
-curl -sL "https://objects.githubusercontent.com/github-production-release-asset-2e65be/55626935/4efc2cb8-f296-4f0c-9a11-d8edfb5e4c6b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231212T154719Z&X-Amz-Expires=300&X-Amz-Signature=e1252aa852648459bddb8178afaf5bbf51835727800b90989bf946e57c1c5cfd&X-Amz-SignedHeaders=host&actor_id=5187038&key_id=0&repo_id=55626935&response-content-disposition=attachment%3B%20filename%3Dwsl.2.0.4.0.x64.msi&response-content-type=application%2Foctet-stream" -o wsl.2.0.4.0.x64.msi& -C -
+curl -sL "https://objects.githubusercontent.com/github-production-release-asset-2e65be/55626935/4efc2cb8-f296-4f0c-9a11-d8edfb5e4c6b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231212T154719Z&X-Amz-Expires=300&X-Amz-Signature=e1252aa852648459bddb8178afaf5bbf51835727800b90989bf946e57c1c5cfd&X-Amz-SignedHeaders=host&actor_id=5187038&key_id=0&repo_id=55626935&response-content-disposition=attachment%3B%20filename%3Dwsl.2.0.4.0.x64.msi&response-content-type=application%2Foctet-stream" -o wsl.2.0.4.0.x64.msi -C -
 ```
 
 ### Install with admin console.
