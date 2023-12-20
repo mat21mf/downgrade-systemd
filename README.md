@@ -46,7 +46,7 @@ sudo apt-mark hold libnss-mymachines libnss-systemd libpam-systemd libsystemd0 l
 
 ## Downgrade WSL itself.
 
-Last version know to work 2.0.4.0.
+Last version known to work 2.0.4.0.
 
 ### Download requirements.
 
