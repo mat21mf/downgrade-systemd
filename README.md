@@ -38,7 +38,7 @@ sudo dpkg -i libsystemd0_249.11-0ubuntu3.9_amd64.deb
 sudo dpkg -i systemd_249.11-0ubuntu3.9_amd64.deb
 ```
 
-### Fixing this packages by apt.
+### Fixing these packages by apt.
 
 ```console
 sudo apt-mark hold libnss-mymachines libnss-systemd libpam-systemd libsystemd0 libudev-dev libudev1 systemd systemd-container systemd-sysv systemd-timesyncd udev
